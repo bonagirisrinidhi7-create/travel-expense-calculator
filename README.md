@@ -130,10 +130,17 @@ Before running the project locally, ensure the following are installed:
 
 | Variable | Description | Default if Unset |
 | :--- | :--- | :--- |
+| `PORT` | Spring Boot server port | `8080` |
+| `CORS_ALLOWED_ORIGINS` | Permitted frontend origins (comma-separated) | `http://localhost:5173` |
+| `DB_URL` | Optional full cloud JDBC connection string | *Constructed from parameters below* |
 | `DB_HOST` | MySQL Server host address | `localhost` |
 | `DB_PORT` | MySQL Server port | `3306` |
+| `DB_NAME` | MySQL database name | `travel_expense_db` |
 | `DB_USERNAME` | MySQL database user | `root` |
 | `DB_PASSWORD` | MySQL password for the specified user | *empty string* |
+| `DB_SSL_MODE` | MySQL SSL mode (`PREFERRED`, `REQUIRED`, etc.) | `PREFERRED` |
+| `DB_USE_SSL` | Enable or disable SSL connection | `false` |
+| `SHOW_SQL` | Toggle Hibernate SQL logging | `false` |
 
 ### Setting Environment Variables in Terminal
 
